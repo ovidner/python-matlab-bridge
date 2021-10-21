@@ -24,11 +24,12 @@ opts = dict(name=NAME,
             author=AUTHOR,
             author_email=AUTHOR_EMAIL,
             platforms=PLATFORMS,
-            version=VERSION,
             packages=PACKAGES,
             package_data=PACKAGE_DATA,
             requires=REQUIRES,
             extras_require=EXTRAS_REQUIRE,
+            setup_requires=["setuptools_scm"],
+            use_scm_version=True,
             scripts=BIN
             )
 
